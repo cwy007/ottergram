@@ -7,6 +7,8 @@
 ```bash
 # 进到项目目录
 browser-sync start --server --browser "Google Chrome" --files "stylesheets/*.css, *.html"
+
+browser-sync start --server --browser "Google Chrome" --files "stylesheets/*.css, *.html, scripts/*.js"
 ```
 
 ## 声明新的字体类型
@@ -23,3 +25,7 @@ browser-sync start --server --browser "Google Chrome" --files "stylesheets/*.css
   font-style: normal;
 }
 ```
+
+## BEM
+
+???
