@@ -9,13 +9,23 @@
   font-style: normal;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   font-size: 10px;
   background: rgb(149, 194, 215);
 }
 
 a {
   text-decoration: none;
+}
+
+.main-header {
+  flex: 0 1 auto;
 }
 
 .logo-text {
@@ -27,23 +37,30 @@ a {
   font-size: 37px;
 }
 
-.thumbnail-item + .thumbnail-item {
-  margin-top: 10px;
+.main-content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .thumbnail-item {
   display: inline-block;
-  width: 120px;
+  min-width: 120px;
+  max-width: 120px;
   border: 1px solid rgb(100%, 100%, 100%);
   border: 1px solid rgba(100%, 100%, 100%, 0.8);
 }
 
 .thumbnail-list {
+  flex: 0 1 auto;
+  order: 2;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
 
-  white-space: nowrap;
-  overflow-x: auto;
+  white-space: nowrap; /* 禁止换行 */
+  overflow-x: auto; /* 添加水平滚动条 */
 }
 
 .thumbnail-image {
@@ -60,6 +77,10 @@ a {
   color: rgb(202, 238, 255);
 
   font-size: 18px;
+}
+
+.detail-image-container {
+  flex: 1 1 auto;
 }
 
 .detail-image {
