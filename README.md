@@ -6,7 +6,7 @@
 
 ```bash
 # 进到项目目录
-browser-sync start --server --browser "Google Chrome" --files "stylesheets/*.css, *.hmtl"
+browser-sync start --server --browser "Google Chrome" --files "stylesheets/*.css, *.html"
 ```
 
 ## 声明新的字体类型
